@@ -9,7 +9,7 @@ INVESTOSCOPE_ITEM_SQL = "SELECT "+\
                          "zname as name, "+\
                          "ZQUOTEFEEDIDENTIFIER as provider "+\
                          "FROM zquoteclient WHERE "+\
-                         "ZQUOTEFEEDIDENTIFIER = \"com.investoscope.YahooFinance\" "+\
+                         "ZQUOTEFEEDIDENTIFIER LIKE \"com.investoscope%.YahooFinance\" "+\
                          "and not symbol = \"Null\";" # yahoo equities
 
 INVESTOSCOPE_APPLESCRIPT = """
